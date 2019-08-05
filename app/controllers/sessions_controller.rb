@@ -15,7 +15,7 @@ class SessionController < ApplicationController
   
   def destroy 
       if session[:name] 
-        session.destroy 
+        session.delete :name
          end
    redirect_to :login
  end 
