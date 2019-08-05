@@ -9,7 +9,7 @@ class SessionController < ApplicationController
       redirect_to :root
       
     else 
-      redirect_to :login 
+      redirect_to login_path
     end 
   end 
   
