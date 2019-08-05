@@ -6,7 +6,7 @@ class SessionController < ApplicationController
   def create 
     if params[:name].present?
       session[:name]=params[:name]
-      redirect_to :root
+      redirect_to root_path 
       
     else 
       redirect_to login_path
